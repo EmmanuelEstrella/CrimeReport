@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Activitys.UploadActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/descrption_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/descrption_text">
+
+
+            <EditText
+                android:id="@+id/location_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:hint="Location"
+                android:layout_marginTop="10dp"
+                />
+            <ImageButton
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/location_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/ic_add_location"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/photo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subir foto"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/linear"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
